@@ -5,17 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresar</title>
-    <link rel="stylesheet" href="css/login.css">
-    <script src="/backend/js/main.js"></script>
+    <link rel="stylesheet" href="/frontend/css/login.css">
 </head>
-
 <body>
+    <div class="formulario">
+        <h1>Inicio de Sesion</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>Nombre de Usuario</label>
+            </div>
+            <div class="username">
+                <input type="password">
+                <label>Contraseña</label>
+            </div>
+            <button onclick="Inicio_Sesion()">Iniciar Sesion</button>
+            <div class="registrarse">
+                <p>No tienes cuenta? <a href="index.html">Registrate.</a></p>
+            </div>
+        </form>
+    </div>
 
-    <h1>Ingresa tu usuario</h1>
-    <input type="text" id="mail_" placeholder="Ingresa tu usuario"></input> 
-    <input type="password" id="contraseña_" placeholder="Ingresa tu contraseña"></input> 
 
-    <button onclick="Inicio_Sesion()">Ingresar</button>
-  
+
+    <script src="/backend/js/main.js"></script>
 </body>
 </html>
